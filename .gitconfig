@@ -1,3 +1,5 @@
 [user]
 	name = ananda101608
 	email = anandaros64@gmail.com
+[alias]
+	gercep = git add . add . && git commit -m 'Update' && git push
