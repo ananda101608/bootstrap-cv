@@ -47,3 +47,10 @@ git remote add origin https://github.com/ananda101608/bootstrap-cv.git
 git remote set-url origin https://github.com/ananda101608/bootstrap-cv.git
 git push -u origin main
 git push -f origin main
+git add .
+git config --global alias.gercep "git add . add . && git commit -m 'Update' && git push"
+git gercep
+git commit -m "Update otomatis: $(date)"
+git push
+git add .
+git commit -m "Update: Menambahkan fold] untuk stylw web"
