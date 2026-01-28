@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Ananda Rachmatu Oktasurya</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#main-nav" tabindex="0">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="main-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">ARO<span class="text-primary">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+        <div class="container text-center" data-aos="zoom-in">
+            <div class="profile-img-container mb-4 mx-auto">
+                <img src="https://via.placeholder.com/200" alt="Gapunya foto pak" class="img-fluid rounded-circle profile-pic border border-3 border-primary" style="width: 200px; height: 200px; object-fit: cover;">
+            </div>
+            <h1 class="display-4 fw-bold text-white">Halo, Saya <span class="text-primary">Ananda Rachmatu</span></h1>
+            <h3 class="text-light mt-3">Saya seorang <span class="typing-text text-primary"></span></h3>
+            <div class="mt-5">
+                <a href="#projects" class="btn btn-primary btn-lg me-3">Lihat Project</a>
+                <a href="#contact" class="btn btn-outline-light btn-lg">Hubungi Saya</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4" data-aos="fade-right">
+                    <div class="glass-card p-4 h-100">
+                        <h2 class="section-title text-white mb-4">About Me</h2>
+                        <p class="text-light-50">&nbsp;</p> 
+                        
+                        <div class="timeline mt-4">
+                            <h5 class="text-white mb-3 border-bottom pb-2 d-inline-block">Pendidikan</h5>
+                            <div class="timeline-item ps-3 border-start border-primary">
+                                <h5 class="text-primary">Siswa SMK</h5>
+                                <p class="text-white small mb-0">SMKN 64 Jakarta | Sekarang</p>
+                                <p class="text-light-50 small">Rekayasa Perangkat Lunak</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="glass-card p-4 h-100">
+                        <h2 class="section-title text-white mb-4">My Skills</h2>
+                        
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between text-white">
+                                <span>HTML & CSS</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress" style="height: 10px; background: rgba(255,255,255,0.1);">
+                                <div class="progress-bar bg-primary" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between text-white">
+                                <span>Tailwind CSS</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress" style="height: 10px; background: rgba(255,255,255,0.1);">
+                                <div class="progress-bar bg-info" style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between text-white">
+                                <span>Bootstrap 5</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress" style="height: 10px; background: rgba(255,255,255,0.1);">
+                                <div class="progress-bar bg-primary" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center text-white mb-5" data-aos="fade-up">Project Saya</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-5" data-aos="flip-left" data-aos-delay="100">
+                    <div class="card glass-card project-card h-100 border-0 bg-transparent text-white">
+                        <div class="card-body text-center p-4" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 15px; border: 1px solid rgba(255,255,255,0.1);">
+                            <div class="mb-3 text-primary"><i class="fas fa-calendar-alt fa-3x"></i></div>
+                            <h5 class="card-title fw-bold">Web Jadwal Kelas</h5>
+                            <p class="card-text text-light-50 mt-3">Platform digital interaktif untuk menampilkan dan mengatur jadwal mata pelajaran siswa di sekolah.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary mt-3">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-5" data-aos="flip-left" data-aos-delay="200">
+                    <div class="card glass-card project-card h-100 border-0 bg-transparent text-white">
+                        <div class="card-body text-center p-4" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 15px; border: 1px solid rgba(255,255,255,0.1);">
+                            <div class="mb-3 text-primary"><i class="fas fa-store fa-3x"></i></div>
+                            <h5 class="card-title fw-bold">Web UMKM Lingkungan</h5>
+                            <p class="card-text text-light-50 mt-3">Website profil dan promosi untuk memberdayakan Usaha Kecil dan Menengah di sekitar lingkungan.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary mt-3">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 mb-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="zoom-in-up">
+                    <div class="glass-card p-5" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 15px;">
+                        <h2 class="text-center text-white mb-4">Hubungi Saya</h2>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.1); color: white;" placeholder="Nama Anda">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" class="form-control" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.1); color: white;" placeholder="Email Anda">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.1); color: white;" placeholder="Subjek">
+                            </div>
+                            <div class="mb-4">
+                                <textarea class="form-control" rows="4" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.1); color: white;" placeholder="Pesan"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 fw-bold">Kirim Pesan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-4 text-white-50">
+        <p>&copy; 2026 Ananda Rachmatu Oktasurya.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <script src="script.js"></script>
+
+  
+</body>
+</html>

@@ -1,0 +1,139 @@
+/* shct */
+:root {
+    --primary-color: #007bff; /* Electric Blue */
+    --dark-blue: #001f3f;
+    --black: #000000;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    
+    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--black) 100%);
+    background-attachment: fixed;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 15px;
+}
+
+
+.text-light-50 {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.navbar {
+    transition: all 0.4s ease;
+    padding: 1.5rem 0;
+}
+
+.navbar.scrolled {
+    background: rgba(0, 31, 63, 0.9); /* Dark Blue semi-transparent */
+    backdrop-filter: blur(10px);
+    padding: 0.8rem 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+.nav-link {
+    color: rgba(255,255,255,0.8) !important;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+
+#hero {
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 4px solid var(--primary-color);
+    box-shadow: 0 0 30px rgba(0, 123, 255, 0.4);
+}
+
+
+.timeline-item {
+    border-left: 2px solid var(--primary-color);
+    padding-left: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: var(--primary-color);
+    position: absolute;
+    left: -7px;
+    top: 5px;
+    border-radius: 50%;
+}
+
+
+.progress {
+    height: 10px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 5px;
+}
+
+.progress-bar {
+    background-color: var(--primary-color);
+}
+
+
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+    border-color: var(--primary-color);
+}
+
+
+.glass-input {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.glass-input:focus {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary-color);
+    color: #fff;
+    box-shadow: none;
+}
+
+.glass-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px 30px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 15px var(--primary-color);
+}
